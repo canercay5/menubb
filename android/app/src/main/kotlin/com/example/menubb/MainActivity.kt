@@ -1,4 +1,4 @@
-package com.example.menubb
+package com.canercay.menubb
 
 import io.flutter.embedding.android.FlutterActivity
 

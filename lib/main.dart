@@ -4,15 +4,21 @@ import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
+// --- RENK SABİTLERİ ---
+const Color kIndigo = Color(0xFF3B4EAF);
+const Color kGreen = Color(0xFF10AF79);
+const Color kOffWhite = Color(0xFFFAF9F6);
+const Color kWhite = Color(0xFFFFFFFF);
+
 void main() async {
-  // Uygulama başlamadan önce yerel tarih formatlarını hazırlıyoruz
   WidgetsFlutterBinding.ensureInitialized();
   await initializeDateFormatting('tr_TR', null);
-  runApp(const IbbMenuApp());
+  runApp(const UltimateMenuApp());
 }
 
-// --- DOMAIN MODELS ---
-// DDD prensiplerine uygun veri modelleri
+// =============================================================================
+// DOMAIN LAYER (MODELS)
+// =============================================================================
 class MealItem {
   final String name;
   final String category;
@@ -27,8 +33,6 @@ class MealItem {
       calories: json['calories'] ?? '',
     );
   }
-
-  // Akşam menüsündeki salatbar ayrımı için kontrol
   bool get isSalatbar => category.toLowerCase().contains('salatbar');
 }
 
@@ -36,33 +40,26 @@ class DayMenu {
   final String date;
   final List<MealItem> kahvalti;
   final List<MealItem> aksam;
-
   DayMenu({required this.date, required this.kahvalti, required this.aksam});
+
+  // String olan tarihi DateTime nesnesine dönüştüren yardımcı alan
+  DateTime get dateTime => DateTime.parse(date);
 }
 
-// --- ANA UYGULAMA YAPISI ---
-class IbbMenuApp extends StatelessWidget {
-  const IbbMenuApp({super.key});
+// =============================================================================
+// ANA UYGULAMA VE UI
+// =============================================================================
+class UltimateMenuApp extends StatelessWidget {
+  const UltimateMenuApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'İBB Yurt Menü',
       theme: ThemeData(
         useMaterial3: true,
-        // İBB Kurumsal Renkleri (Kırmızı ve Lacivert)
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: const Color(0xFFE30613),
-          primary: const Color(0xFFE30613),
-          secondary: const Color(0xFF1C3B68),
-        ),
-        appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFFE30613),
-          foregroundColor: Colors.white,
-          elevation: 4,
-          centerTitle: true,
-        ),
+        scaffoldBackgroundColor: kOffWhite,
+        colorScheme: ColorScheme.fromSeed(seedColor: kIndigo, primary: kIndigo),
       ),
       home: const MenuPage(),
     );
@@ -77,45 +74,58 @@ class MenuPage extends StatefulWidget {
 }
 
 class _MenuPageState extends State<MenuPage> {
-  final String url = "https://raw.githubusercontent.com/emirozd/menubb/refs/heads/main/src/data/menu.json";
+  final String url = "https://raw.githubusercontent.com/canercay5/menubb/main/data/menu.json";
+  
+  final Map<String, GlobalKey> _morningKeys = {};
+  final Map<String, GlobalKey> _eveningKeys = {};
+  
   late Future<List<DayMenu>> _menuFuture;
+  List<DayMenu> _allMenus = [];
 
   @override
   void initState() {
     super.initState();
-    _loadData();
+    _menuFuture = _fetchMenus();
   }
 
-  // Veriyi GitHub'dan çekme fonksiyonu
-  void _loadData() {
-    setState(() {
-      _menuFuture = _fetchMenus();
-    });
+  void _scrollToToday(int tabIndex) {
+    final todayStr = DateFormat('yyyy-MM-dd').format(DateTime.now());
+    final targetKey = (tabIndex == 0) ? _morningKeys[todayStr] : _eveningKeys[todayStr];
+
+    if (targetKey != null && targetKey.currentContext != null) {
+      Scrollable.ensureVisible(
+        targetKey.currentContext!,
+        duration: const Duration(milliseconds: 1000),
+        curve: Curves.fastLinearToSlowEaseIn,
+        alignment: 0.5, // EKRANIN TAM ORTASINA HİZALAR
+      );
+    }
   }
 
   Future<List<DayMenu>> _fetchMenus() async {
-    try {
-      final response = await http.get(Uri.parse(url));
-      if (response.statusCode == 200) {
-        final Map<String, dynamic> data = json.decode(response.body);
-        List<DayMenu> menus = [];
-        
-        data.forEach((date, content) {
-          menus.add(DayMenu(
-            date: date,
-            kahvalti: (content['kahvalti'] as List? ?? []).map((e) => MealItem.fromJson(e)).toList(),
-            aksam: (content['aksam'] as List? ?? []).map((e) => MealItem.fromJson(e)).toList(),
-          ));
-        });
-        
-        // Tarihe göre sıralama (Eskiden yeniye)
-        menus.sort((a, b) => a.date.compareTo(b.date));
-        return menus;
-      }
-      throw Exception("Sunucuya ulaşılamadı");
-    } catch (e) {
-      throw Exception("Bağlantı hatası: $e");
+    final response = await http.get(Uri.parse(url));
+    if (response.statusCode == 200) {
+      final Map<String, dynamic> data = json.decode(response.body);
+      List<DayMenu> menus = [];
+      data.forEach((date, content) {
+        menus.add(DayMenu(
+          date: date,
+          kahvalti: (content['kahvalti'] as List? ?? []).map((e) => MealItem.fromJson(e)).toList(),
+          aksam: (content['aksam'] as List? ?? []).map((e) => MealItem.fromJson(e)).toList(),
+        ));
+        _morningKeys[date] = GlobalKey();
+        _eveningKeys[date] = GlobalKey();
+      });
+      menus.sort((a, b) => a.date.compareTo(b.date));
+      _allMenus = menus;
+
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        Future.delayed(const Duration(milliseconds: 800), () => _scrollToToday(0));
+      });
+
+      return menus;
     }
+    throw Exception("Bağlantı Hatası");
   }
 
   @override
@@ -124,163 +134,161 @@ class _MenuPageState extends State<MenuPage> {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("İBB YURT YEMEK MENÜSÜ", 
-              style: TextStyle(fontWeight: FontWeight.bold, letterSpacing: 1.1)),
-          bottom: const TabBar(
-            indicatorColor: Colors.white,
-            indicatorWeight: 4,
-            unselectedLabelColor: Colors.white70,
-            labelColor: Colors.white,
-            labelStyle: TextStyle(fontWeight: FontWeight.bold),
-            tabs: [
-              Tab(text: "SABAH", icon: Icon(Icons.wb_twilight_rounded)),
-              Tab(text: "AKŞAM", icon: Icon(Icons.nightlight_round_sharp)),
-            ],
-          ),
+          title: const Text("YEMEK LİSTESİ", style: TextStyle(fontWeight: FontWeight.w900, color: kIndigo)),
+          centerTitle: true,
+          backgroundColor: kOffWhite,
         ),
-        // TabBarView sayfalar arası kaydırmayı otomatik sağlar
         body: FutureBuilder<List<DayMenu>>(
           future: _menuFuture,
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
+              return const Center(child: CircularProgressIndicator(color: kIndigo));
             }
-            if (snapshot.hasError) {
-              return Center(child: Text("Hata: ${snapshot.error}"));
-            }
-
-            final menus = snapshot.data ?? [];
             return TabBarView(
               children: [
-                _buildRefreshableList(menus, true),
-                _buildRefreshableList(menus, false),
+                _buildScrollableList(_allMenus, true, _morningKeys),
+                _buildScrollableList(_allMenus, false, _eveningKeys),
               ],
             );
           },
         ),
+        floatingActionButton: Builder(builder: (context) {
+          return FloatingActionButton(
+            onPressed: () => _scrollToToday(DefaultTabController.of(context).index),
+            backgroundColor: kGreen,
+            elevation: 12,
+            child: const Icon(Icons.calendar_month_rounded, color: kWhite, size: 32),
+          );
+        }),
+        bottomNavigationBar: Container(
+          decoration: const BoxDecoration(
+            color: kWhite,
+            boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+          ),
+          child: const TabBar(
+            labelColor: kIndigo,
+            unselectedLabelColor: Colors.grey,
+            indicatorColor: kIndigo,
+            indicatorWeight: 6,
+            tabs: [
+              Tab(icon: Icon(Icons.sunny), text: "Sabah"),
+              Tab(icon: Icon(Icons.nights_stay), text: "Akşam"),
+            ],
+          ),
+        ),
       ),
     );
   }
 
-  // Aşağı çekince güncellenen liste yapısı
-  Widget _buildRefreshableList(List<DayMenu> menus, bool isMorning) {
-    return RefreshIndicator(
-      onRefresh: () async {
-        _loadData();
-        await _menuFuture;
-      },
-      child: ListView.builder(
-        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
-        itemCount: menus.length,
-        itemBuilder: (context, index) {
-          final dayMenu = menus[index];
-          final items = isMorning ? dayMenu.kahvalti : dayMenu.aksam;
-          
-          DateTime parsedDate = DateTime.parse(dayMenu.date);
-          String dayName = DateFormat('EEEE', 'tr_TR').format(parsedDate);
-          String dayMonth = DateFormat('dd MMMM', 'tr_TR').format(parsedDate);
-          
-          // Bugünün tarihini kontrol etme
-          bool isToday = DateFormat('yyyy-MM-dd').format(DateTime.now()) == dayMenu.date;
+  Widget _buildScrollableList(List<DayMenu> menus, bool isMorning, Map<String, GlobalKey> keys) {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.fromLTRB(20, 20, 20, 150),
+      child: Column(
+        children: menus.map((menu) {
+          bool isToday = DateFormat('yyyy-MM-dd').format(DateTime.now()) == menu.date;
+          final items = isMorning ? menu.kahvalti : menu.aksam;
 
-          return Card(
-            elevation: isToday ? 8 : 2,
-            margin: const EdgeInsets.only(bottom: 16),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(16),
-              // Bugün ise kırmızı çerçeve ekle
-              side: isToday 
-                  ? const BorderSide(color: Color(0xFFE30613), width: 2) 
-                  : BorderSide.none,
+          return Container(
+            key: keys[menu.date],
+            margin: const EdgeInsets.only(bottom: 30),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(32),
+              // BUGÜN İÇİN YEŞİL GLOW EFEKTİ
+              boxShadow: isToday ? [
+                const BoxShadow(
+                  color: kGreen,
+                  blurRadius: 25,
+                  spreadRadius: 3,
+                )
+              ] : [],
             ),
-            child: Theme(
-              data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-              child: ExpansionTile(
-                tilePadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                leading: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                  decoration: BoxDecoration(
-                    color: isToday ? const Color(0xFFE30613) : Colors.grey.shade100,
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(DateFormat('dd').format(parsedDate), 
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold, 
-                            fontSize: 18,
-                            color: isToday ? Colors.white : Colors.black87
-                          )),
-                      Text(DateFormat('MMM').format(parsedDate).toUpperCase(), 
-                          style: TextStyle(
-                            fontSize: 10, 
-                            color: isToday ? Colors.white : Colors.black54
-                          )),
-                    ],
-                  ),
+            child: Card(
+              elevation: 0,
+              color: kWhite,
+              margin: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(28),
+                side: BorderSide(color: isToday ? kGreen : const Color(0xFFEEEEEE), width: 2.5),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            // HATA BURADA GİDERİLDİ: menu.date yerine menu.dateTime kullanıldı
+                            Text(
+                              DateFormat('EEEE', 'tr_TR').format(menu.dateTime).toUpperCase(),
+                              style: const TextStyle(fontWeight: FontWeight.w900, color: kIndigo, fontSize: 22),
+                            ),
+                            Text(
+                              DateFormat('dd MMMM yyyy', 'tr_TR').format(menu.dateTime),
+                              style: const TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 14),
+                            ),
+                          ],
+                        ),
+                        if (isToday) const Icon(Icons.verified_rounded, color: kGreen, size: 36),
+                      ],
+                    ),
+                    const SizedBox(height: 18),
+                    const Divider(height: 1, thickness: 2, color: kOffWhite),
+                    const SizedBox(height: 18),
+                    if (isMorning) 
+                      ...items.map((m) => _buildMealRow(m))
+                    else 
+                      ..._buildGroupedAksam(items),
+                  ],
                 ),
-                title: Text(
-                  dayName.toUpperCase(),
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    color: isToday ? const Color(0xFFE30613) : const Color(0xFF1C3B68),
-                  ),
-                ),
-                subtitle: Text(dayMonth, style: const TextStyle(fontSize: 13)),
-                children: [
-                  const Divider(indent: 16, endIndent: 16, height: 1),
-                  const SizedBox(height: 8),
-                  if (items.isEmpty)
-                    const ListTile(title: Text("Bu öğün için menü girilmemiş.")),
-                  ...items.map((meal) => _buildMealTile(meal)).toList(),
-                  const SizedBox(height: 12),
-                ],
               ),
             ),
           );
-        },
+        }).toList(),
       ),
     );
   }
 
-  // Menü içindeki her bir satır (Yemek ve Kalori)
-  Widget _buildMealTile(MealItem meal) {
-    return ListTile(
-      visualDensity: VisualDensity.compact,
-      leading: Icon(
-        meal.isSalatbar ? Icons.eco_rounded : Icons.restaurant_menu_rounded,
-        size: 20,
-        color: meal.isSalatbar ? Colors.green.shade600 : Colors.blueGrey.shade300,
-      ),
-      title: Row(
+  List<Widget> _buildGroupedAksam(List<MealItem> items) {
+    final normal = items.where((i) => !i.isSalatbar).toList();
+    final salat = items.where((i) => i.isSalatbar).toList();
+    return [
+      if (normal.isNotEmpty) _sectionHeader("ANA YEMEK LİSTESİ"),
+      ...normal.map((m) => _buildMealRow(m)),
+      if (salat.isNotEmpty) ...[
+        const SizedBox(height: 20),
+        _sectionHeader("SALATA BAR"),
+        ...salat.map((m) => _buildMealRow(m)),
+      ]
+    ];
+  }
+
+  Widget _sectionHeader(String title) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Text(title, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: kGreen, letterSpacing: 1.5)),
+    );
+  }
+
+  Widget _buildMealRow(MealItem meal) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 8),
+      child: Row(
         children: [
+          const Icon(Icons.circle, size: 8, color: kIndigo),
+          const SizedBox(width: 12),
           Expanded(
-            child: Text(meal.name, 
-                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w500)),
+            child: Text(meal.name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Color(0xFF2C3E50))),
           ),
-          // Salatbar ise yeşil bir etiket göster
-          if (meal.isSalatbar)
-            Container(
-              margin: const EdgeInsets.only(left: 8),
-              padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-              decoration: BoxDecoration(
-                color: Colors.green.shade50,
-                borderRadius: BorderRadius.circular(6),
-                border: Border.all(color: Colors.green.shade200),
-              ),
-              child: const Text("SALATBAR", 
-                  style: TextStyle(fontSize: 8, color: Colors.green, fontWeight: FontWeight.bold)),
-            ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(color: kIndigo, borderRadius: BorderRadius.circular(14)),
+            child: Text(meal.calories, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: kWhite)),
+          ),
         ],
-      ),
-      trailing: Text(
-        meal.calories,
-        style: TextStyle(
-          fontSize: 12, 
-          color: Colors.red.shade900, 
-          fontWeight: FontWeight.bold
-        ),
       ),
     );
   }
