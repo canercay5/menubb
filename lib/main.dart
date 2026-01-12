@@ -3,22 +3,79 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
-// --- RENK SABİTLERİ ---
+// --- RENK SABİTLERİ (Solid/Net Renkler) ---
 const Color kIndigo = Color(0xFF3B4EAF);
 const Color kGreen = Color(0xFF10AF79);
 const Color kOffWhite = Color(0xFFFAF9F6);
 const Color kWhite = Color(0xFFFFFFFF);
 
+// --- REKLAM YÖNETİCİSİ (Singleton) ---
+class AppOpenAdManager {
+  // TEST ID: Gerçek yayında AdMob panelindeki kendi ID'n ile değiştir!
+  String adUnitId = "ca-app-pub-3940256099942544/9257395921";
+  AppOpenAd? _appOpenAd;
+  bool _isShowingAd = false;
+
+  void loadAd() {
+    AppOpenAd.load(
+      adUnitId: adUnitId,
+      request: const AdRequest(),
+      adLoadCallback: AppOpenAdLoadCallback(
+        onAdLoaded: (ad) {
+          debugPrint('Reklam başarıyla yüklendi.');
+          _appOpenAd = ad;
+        },
+        onAdFailedToLoad: (error) => debugPrint('Reklam yüklenemedi: $error'),
+      ),
+    );
+  }
+
+  void showAdIfAvailable() {
+    if (_appOpenAd == null) {
+      loadAd();
+      return;
+    }
+    if (_isShowingAd) return;
+
+    _appOpenAd!.fullScreenContentCallback = FullScreenContentCallback(
+      onAdShowedFullScreenContent: (ad) => _isShowingAd = true,
+      onAdDismissedFullScreenContent: (ad) {
+        _isShowingAd = false;
+        ad.dispose();
+        _appOpenAd = null;
+        loadAd();
+      },
+    );
+    _appOpenAd!.show();
+  }
+}
+
+// Global reklam yöneticisi
+final adManager = AppOpenAdManager();
+
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await initializeDateFormatting('tr_TR', null);
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    
+    // 1. SDK başlatma işlemlerini başlat ama uygulamayı engelleme
+    MobileAds.instance.initialize();
+    
+    // 2. Tarih formatını güvenli bir şekilde başlat
+    await initializeDateFormatting('tr_TR', null);
+
+    // 3. Reklamı yüklemeye başla (Arka planda çalışsın)
+    adManager.loadAd();
+    
+  } catch (e) {
+    debugPrint("Başlatma hatası: $e");
+  }
+
+  // Her durumda uygulamayı başlat
   runApp(const UltimateMenuApp());
 }
 
-// =============================================================================
-// DOMAIN LAYER (MODELS)
-// =============================================================================
 class MealItem {
   final String name;
   final String category;
@@ -42,15 +99,42 @@ class DayMenu {
   final List<MealItem> aksam;
   DayMenu({required this.date, required this.kahvalti, required this.aksam});
 
-  // String olan tarihi DateTime nesnesine dönüştüren yardımcı alan
   DateTime get dateTime => DateTime.parse(date);
 }
 
-// =============================================================================
-// ANA UYGULAMA VE UI
-// =============================================================================
-class UltimateMenuApp extends StatelessWidget {
+// --- ANA UYGULAMA YAPISI ---
+class UltimateMenuApp extends StatefulWidget {
   const UltimateMenuApp({super.key});
+
+  @override
+  State<UltimateMenuApp> createState() => _UltimateMenuAppState();
+}
+
+class _UltimateMenuAppState extends State<UltimateMenuApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+    
+    // Açılışta 3 saniye sonra reklamı göster
+    Future.delayed(const Duration(seconds: 3), () {
+      adManager.showAdIfAvailable();
+    });
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    // Uygulama arka plandan öne gelince reklam göster
+    if (state == AppLifecycleState.resumed) {
+      adManager.showAdIfAvailable();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,6 +150,7 @@ class UltimateMenuApp extends StatelessWidget {
   }
 }
 
+// --- MENÜ SAYFASI ---
 class MenuPage extends StatefulWidget {
   const MenuPage({super.key});
 
@@ -76,6 +161,7 @@ class MenuPage extends StatefulWidget {
 class _MenuPageState extends State<MenuPage> {
   final String url = "https://raw.githubusercontent.com/canercay5/menubb/main/data/menu.json";
   
+  // GlobalKey listeleri ile her karta odaklanma imkanı
   final Map<String, GlobalKey> _morningKeys = {};
   final Map<String, GlobalKey> _eveningKeys = {};
   
@@ -97,16 +183,19 @@ class _MenuPageState extends State<MenuPage> {
         targetKey.currentContext!,
         duration: const Duration(milliseconds: 1000),
         curve: Curves.fastLinearToSlowEaseIn,
-        alignment: 0.5, // EKRANIN TAM ORTASINA HİZALAR
+        alignment: 0.5, // EKRANIN TAM ORTASINA HİZALAMA
       );
     }
   }
 
   Future<List<DayMenu>> _fetchMenus() async {
-    final response = await http.get(Uri.parse(url));
+    try {
+    final response = await http.get(Uri.parse(url)).timeout(const Duration(seconds: 5));
+
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = json.decode(response.body);
       List<DayMenu> menus = [];
+      
       data.forEach((date, content) {
         menus.add(DayMenu(
           date: date,
@@ -116,6 +205,7 @@ class _MenuPageState extends State<MenuPage> {
         _morningKeys[date] = GlobalKey();
         _eveningKeys[date] = GlobalKey();
       });
+
       menus.sort((a, b) => a.date.compareTo(b.date));
       _allMenus = menus;
 
@@ -124,8 +214,16 @@ class _MenuPageState extends State<MenuPage> {
       });
 
       return menus;
+    } else {
+      // Sunucu 200 dönmezse (404 vb.) boş liste döndür ki uygulama açılsın
+      debugPrint("Sunucu hatası: ${response.statusCode}");
+      return [];
     }
-    throw Exception("Bağlantı Hatası");
+  } catch (e) {
+    // İnternet yoksa veya başka bir hata olursa buraya düşer
+    debugPrint("Veri çekilemedi: $e");
+    return []; // Uygulama logoda kalmasın diye boş liste döndürüyoruz
+  }
   }
 
   @override
@@ -221,7 +319,6 @@ class _MenuPageState extends State<MenuPage> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            // HATA BURADA GİDERİLDİ: menu.date yerine menu.dateTime kullanıldı
                             Text(
                               DateFormat('EEEE', 'tr_TR').format(menu.dateTime).toUpperCase(),
                               style: const TextStyle(fontWeight: FontWeight.w900, color: kIndigo, fontSize: 22),
