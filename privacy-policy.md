@@ -1,1 +1,0 @@
-"Menü BB uygulaması, Emirhan Özdemir ve Caner Çay tarafından geliştirilmiştir. Bu uygulama, yemek menülerini görüntülemek için GitHub üzerinden veri çeker. Kullanıcılardan isim, e-posta veya konum gibi hiçbir kişisel veri toplamaz ve üçüncü taraflarla paylaşmaz. Uygulama sadece internet erişimi izni kullanır."
