@@ -76,7 +76,7 @@ class MenuDataExtractor:
 
 # --- Uygulama Noktası ---
 if __name__ == "__main__":
-    extractor = MenuDataExtractor('ocak.xlsx')
+    extractor = MenuDataExtractor('subat.xlsx')
     extractor.extract_aksam()
     extractor.extract_kahvalti()
     extractor.save_json('menu.json')
