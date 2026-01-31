@@ -1,5 +1,52 @@
 {
   "2026-02-01": {
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "MANTAR ÇORBASI (1,2,3,4,14)",
+        "calories": "139 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "ARPA ŞEHRİYE SALATASI (1,7,8,10,12)",
+        "calories": "98 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "TAS KEBAP (1,8)",
+        "calories": "182 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "HAYDARİ (4)",
+        "calories": "41 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "PATLICANLI BULGUR PİLAVI (1,8)",
+        "calories": "178 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "PANCAR TURŞUSU (12)",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "MEYVE (MUZ)",
+        "calories": "326 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "SÖĞÜŞ DİLİM DOMATES",
+        "calories": "19 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "ZEYTİYAĞLI PRASA (1)",
+        "calories": "31 kcal"
+      }
+    ],
     "kahvalti": [
       {
         "category": "Kahvaltılık",
