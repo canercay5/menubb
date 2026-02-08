@@ -407,7 +407,9 @@
       { "category": "Salatbar", "name": "KARIŞIK SALATA (KIRMIZI LAHANA - TURP) (12)", "calories": "32" },
       { "category": "Salatbar", "name": "DEREOTLU MISIRLI YEŞİL ZEYTİN SALATASI", "calories": "29" },
       { "category": "Salatbar", "name": "HUMUS (1,8,14)", "calories": "68" },
-      { "category": "Salatbar", "name": "ŞERBET", "calories": "150" }
+      { "category": "Salatbar", "name": "ŞERBET", "calories": "150" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" }
+
     ]
   },
   "2026-02-20": {
@@ -430,7 +432,7 @@
       { "category": "Salatbar", "name": "KÖZ SOGAN SALATASI", "calories": "21" },
       { "category": "Salatbar", "name": "ŞAKŞUKA", "calories": "76" },
       { "category": "Salatbar", "name": "GÜLLAÇ (1,3,4,7,8,11)", "calories": "250" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "SOĞUK ÇAY", "calories": "99" }
     ]
   },
@@ -454,7 +456,7 @@
       { "category": "Salatbar", "name": "KURU ÜZÜM HOŞAFI (12)", "calories": "51" },
       { "category": "Salatbar", "name": "KUSKUS SALATASI (1,3,4,7,8,10,11,12)", "calories": "114" },
       { "category": "Salatbar", "name": "MERCİMEK KÖFTE (1,8,12)", "calories": "97" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "GAZLI İÇECEK", "calories": "110" }
     ]
   },
@@ -478,7 +480,7 @@
       { "category": "Salatbar", "name": "DEREOTLU MISIRLI YEŞİL ZEYTİN SALATASI", "calories": "29" },
       { "category": "Salatbar", "name": "KIRMIZI LAHANA(12)", "calories": "24" },
       { "category": "Salatbar", "name": "SARI BURMA (1,3,4,7,8,11)", "calories": "346" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" }
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" }
     ]
   },
   "2026-02-23": {
@@ -501,7 +503,7 @@
       { "category": "Salatbar", "name": "KISIR (1,8,12)", "calories": "74" },
       { "category": "Salatbar", "name": "ÇOBAN SALATASI", "calories": "32" },
       { "category": "Salatbar", "name": "Z.YAĞLI ORBİT FASULYE (1,8)", "calories": "73" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "SOĞUK ÇAY", "calories": "99" }
     ]
   },
@@ -526,7 +528,7 @@
       { "category": "Salatbar", "name": "ARPA ŞEHRİYE SALATASI (1,7,8,10,12)", "calories": "98" },
       { "category": "Salatbar", "name": "ŞAKŞUKA", "calories": "76" },
       { "category": "Salatbar", "name": "SÜTLÜ TATLI (SUPANGLE) (1,3,4)", "calories": "146" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "AYRAN (4)", "calories": "74" }
     ]
   },
@@ -551,7 +553,7 @@
       { "category": "Salatbar", "name": "HAYDARİ (4)", "calories": "41" },
       { "category": "Salatbar", "name": "FISTIKLI BAKLAVA (1,3,4,7,8,11)", "calories": "395" },
       { "category": "Salatbar", "name": "PİYAZ (1,3,8,14)", "calories": "54" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "ŞERBET", "calories": "150" }
     ]
   },
@@ -576,7 +578,7 @@
       { "category": "Salatbar", "name": "MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12)", "calories": "8" },
       { "category": "Salatbar", "name": "DOM. SOSLU PATATES KIZARTMASI (1)", "calories": "87" },
       { "category": "Salatbar", "name": "TULUMBA TATLISI (1,3,4)", "calories": "406" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "ŞERBET", "calories": "150" }
     ]
   },
@@ -601,7 +603,7 @@
       { "category": "Salatbar", "name": "KÖZ SOGAN SALATASI", "calories": "21" },
       { "category": "Salatbar", "name": "SÜTLÜ TATLI (PROFİTEROL) (1,3,4)", "calories": "261" },
       { "category": "Salatbar", "name": "FALAFEL (1,3,4,8,10,11,12,14)", "calories": "138" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "SOĞUK ÇAY", "calories": "99" }
     ]
   },
@@ -631,7 +633,7 @@
       { "category": "Salatbar", "name": "KARIŞIK KIZARTMA (PATLICAN-KABAK)", "calories": "71" },
       { "category": "Salatbar", "name": "GÜLLAÇ (1,3,4,7,8,11)", "calories": "250" },
       { "category": "Salatbar", "name": "HUMUS (1,8,14)", "calories": "68" },
-      { "category": "İftariyelik", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
+      { "category": "Salatbar", "name": "İFTARİYELİK\nZEYTİN, PEYNİR, HURMA, \nRAMAZAN PİDESİ (1,3,4,14)", "calories": "358" },
       { "category": "Salatbar", "name": "GAZLI İÇECEK", "calories": "157" }
     ]
   }
