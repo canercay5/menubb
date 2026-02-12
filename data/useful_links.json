@@ -43,63 +43,126 @@
       "value": "153"
     }
   ],
+  "capacity": {
+    "totalBeds": "bilinmiyor",
+    "femaleBeds": "bilinmiyor",
+    "maleBeds": "bilinmiyor",
+    "disabledBeds": "bilinmiyor"
+  },
   "femaleDorms": [
     {
-      "name": "Örnektepe Yükseköğrenim Kız Öğrenci Yurdu",
+      "name": "İBB Örnektepe Yükseköğrenim Kız Öğrenci Yurdu",
       "phone": "0212 312 63 32",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
       "address": "Örnektepe Mah. Pazaraltı Sok. No:16 Beyoğlu/İstanbul"
     },
     {
-      "name": "Avcılar Yükseköğrenim Kız Öğrenci Yurdu",
+      "name": "İBB Avcılar-1 Yükseköğrenim Kız Öğrenci Yurdu",
       "phone": "0212 312 63 09",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
       "address": "Üniversite Mah. Karanfil Sok. No:29 Avcılar/İstanbul"
     },
     {
-      "name": "Maltepe Yükseköğrenim Kız Öğrenci Yurdu",
+      "name": "İBB Avcılar-2 Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 312 63 10",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Üniversite Mah. Karanfil Sok. No:31 Avcılar/İstanbul"
+    },
+    {
+      "name": "İBB Maltepe Yükseköğrenim Kız Öğrenci Yurdu",
       "phone": "0216 586 56 60",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
       "address": "Yalı Mah. Rıhtım Cad. No:20 Maltepe/İstanbul"
     },
     {
-      "name": "Eyüpsultan Yükseköğrenim Kız Öğrenci Yurdu",
-      "phone": "0212 449 42 77",
-      "address": "Emniyettepe Mah. Kazım Karabekir Cad. No:2/1 Eyüpsultan/İstanbul"
+      "name": "İBB Bayrampaşa Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 312 63 29",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Orta Mah. Fatih Parkı Altı, No:1 Bayrampaşa/İstanbul"
     },
     {
-      "name": "Bayrampaşa Yükseköğrenim Kız Öğrenci Yurdu",
-      "phone": "0212 312 63 29",
-      "address": "Orta Mah. Fatih Parkı Altı, No:1 Bayrampaşa/İstanbul"
+      "name": "İBB Kadıköy Zeren Ertaş Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0216 312 89 00",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Hasanpaşa Mah. Uhuvvet Sok. No:42D Kadıköy/İstanbul"
+    },
+    {
+      "name": "İBB Küçükçekmece Filenin Sultanları Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 411 06 91",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Halkalı Merkez Mah. Zeynebiye Cad. 1.Dilek Sok. No:11 Küçükçekmece/İstanbul"
+    },
+    {
+      "name": "İBB Mustafa Necati Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "bilinmiyor",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "bilinmiyor"
+    },
+    {
+      "name": "İBB Filiz Akın Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "bilinmiyor",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "bilinmiyor"
+    },
+    {
+      "name": "İBB Zübeyde Hanım Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "bilinmiyor",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "bilinmiyor"
     }
   ],
   "maleDorms": [
     {
-      "name": "Esenyurt Yükseköğrenim Erkek Öğrenci Yurdu",
+      "name": "İBB Esenyurt Yükseköğrenim Erkek Öğrenci Yurdu",
       "phone": "0212 312 63 17",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
       "address": "Yeşilkent Mah. Nazım Hikmet Bulvarı No:14/16 Esenyurt/İstanbul"
     },
     {
-      "name": "Küçükçekmece Yükseköğrenim Erkek Öğrenci Yurdu",
-      "phone": "0212 411 06 90",
-      "address": "Halkalı Merkez Mah. Zeynebiye Cad. No:31 Küçükçekmece/İstanbul"
+      "name": "İBB Küçükçekmece Filenin Sultanları Yükseköğrenim Erkek Öğrenci Yurdu",
+      "phone": "0212 411 06 92",
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Halkalı Merkez Mah. Zeynebiye Cad. 1.Dilek Sok. No:11 Küçükçekmece/İstanbul"
     },
     {
-      "name": "Bağcılar Cüneyt Arkın Erkek Öğrenci Yurdu",
+      "name": "İBB Bağcılar Cüneyt Arkın Yükseköğrenim Erkek Öğrenci Yurdu",
       "phone": "0212 312 63 26",
-      "address": "Yenimahalle Mah. Dökümcüler Cad. No: 20 Bağcılar/İstanbul"
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Yenimahalle Mah. Dökümcüler Cad. No:20 Bağcılar/İstanbul"
     },
     {
-      "name": "Ümraniye Yükseköğrenim Erkek Öğrenci Yurdu",
+      "name": "İBB Ümraniye Yükseköğrenim Erkek Öğrenci Yurdu",
       "phone": "0216 586 56 61",
-      "address": "Esenşehir Mah. NATO Yolu Cad. No: 231 Ümraniye/İstanbul"
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Esenşehir Mah. NATO Yolu Cad. No:231 Ümraniye/İstanbul"
     },
     {
-      "name": "Gaziosmanpaşa Erkek Öğrenci Yurdu",
+      "name": "İBB Gaziosmanpaşa Yükseköğrenim Erkek Öğrenci Yurdu",
       "phone": "0212 312 63 81",
-      "address": "Barbaros Hayrettin Paşa Mah. 1060. Sok. No: 5-7/1 Gaziosmanpaşa/İstanbul"
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Barbaros Hayrettin Paşa Mah. 1060. Sok. No:5-7/1 Gaziosmanpaşa/İstanbul"
     },
     {
-      "name": "Şişli Erkek Öğrenci Yurdu",
+      "name": "İBB Şişli Yükseköğrenim Erkek Öğrenci Yurdu",
       "phone": "0212 449 92 65",
-      "address": "Halide Edip Adıvar Mah. Darülaceze Cad. No: 15/A Şişli/İstanbul"
+      "email": "bilinmiyor",
+      "capacity": "bilinmiyor",
+      "address": "Halide Edip Adıvar Mah. Darülaceze Cad. No:15/A Şişli/İstanbul"
     }
   ]
 }

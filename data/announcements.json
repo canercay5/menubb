@@ -2,19 +2,26 @@
   "version": "1",
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
+        {
+      "id": "vote*menu-2026-02-13",
+      "title": "Hadi menülere oy ver!",
+      "body": "Sizlerin en sevdiği yemekleri görmek istiyoruz. Tamamen anonim olarak menülere oy verebilirsiniz.",
+      "date": "2026-02-13",
+      "pinned": true
+        },  
     {
       "id": "welcome-2026-02-11",
       "title": "Hoş geldiniz!",
       "body": "Uygulamamıza imsakiye ekledik. İmsakiye bölümünde sahur ve iftar vakitlerini görebilirsiniz.",
       "date": "2026-02-11",
-      "pinned": true,
+      "pinned": false,
       "action": { "label": "Detaylı Namaz Vakitleri", "url": "https://sfk.istanbul.edu.tr/istanbul-ramazan-imsakiyesi-2026" }
     },    {
       "id": "notification-sample-2026-02-12",
       "title": "Bildirimler Açık mı?",
       "body": "Yemek saatleri için artık hatırlatıcı kurabilirsiniz!",
       "date": "2026-02-12",
-      "pinned": true,
+      "pinned": false,
       "action": { "label": "Yemek Saati", "url": "https://www.youtube.com/shorts/fA1jnDn7rhk" }
     }
   ]
