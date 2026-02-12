@@ -1,0 +1,14 @@
+{
+  "version": "1",
+  "updatedAt": "2026-02-12T12:00:00+03:00",
+  "items": [
+    {
+      "id": "maintenance-2026-02-15",
+      "title": "Planlı Bakım",
+      "body": "15 Şubat 02:00-03:00 arası kısa kesinti olabilir.",
+      "date": "2026-02-12",
+      "pinned": true,
+      "action": { "label": "Detay", "url": "https://example.com" }
+    }
+  ]
+}
