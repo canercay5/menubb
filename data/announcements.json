@@ -3,12 +3,19 @@
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
     {
-      "id": "maintenance-2026-02-15",
-      "title": "Planlı Bakım",
-      "body": "15 Şubat 02:00-03:00 arası kısa kesinti olabilir.",
+      "id": "welcome-2026-02-11",
+      "title": "Hoş geldiniz!",
+      "body": "Uygulamamıza imsakiye ekledik. İmsakiye bölümünde sahur ve iftar vakitlerini görebilirsiniz.",
+      "date": "2026-02-11",
+      "pinned": true,
+      "action": { "label": "Detaylı Namaz Vakitleri", "url": "https://sfk.istanbul.edu.tr/istanbul-ramazan-imsakiyesi-2026" }
+    },    {
+      "id": "notification-sample-2026-02-12",
+      "title": "Bildirimler Açık mı?",
+      "body": "Yemek saatleri için artık hatırlatıcı kurabilirsiniz!",
       "date": "2026-02-12",
       "pinned": true,
-      "action": { "label": "Detay", "url": "https://example.com" }
+      "action": { "label": "Yemek Saati", "url": "https://www.youtube.com/shorts/fA1jnDn7rhk" }
     }
   ]
 }
