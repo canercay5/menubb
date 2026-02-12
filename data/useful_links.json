@@ -1,0 +1,105 @@
+{
+  "generalLinks": [
+    {
+      "iconKey": "language",
+      "title": "İBB Yurtlar Resmi Web Sitesi",
+      "subtitle": "yurt.ibb.istanbul",
+      "type": "url",
+      "value": "https://yurt.ibb.istanbul/"
+    },
+    {
+      "iconKey": "edit_notifications_rounded",
+      "title": "Öğrenci Portalı",
+      "subtitle": "yurtportali.ibb.istanbul",
+      "type": "url",
+      "value": "https://yurtportali.ibb.istanbul/"
+    },
+    {
+      "iconKey": "attach_money_rounded",
+      "title": "Ödeme Portalı",
+      "subtitle": "fys.ibb.istanbul",
+      "type": "url",
+      "value": "https://fys.ibb.istanbul/"
+    },
+    {
+      "iconKey": "wifi",
+      "title": "İBB WİFİ",
+      "subtitle": "captive.ibbwifi.istanbul/",
+      "type": "url",
+      "value": "http://captive.ibbwifi.istanbul/"
+    },
+    {
+      "iconKey": "school",
+      "title": "Genç Üniversiteli",
+      "subtitle": "gencuniversiteli.ibb.istanbul",
+      "type": "url",
+      "value": "https://gencuniversiteli.ibb.istanbul/"
+    },
+    {
+      "iconKey": "call_quality",
+      "title": "Alo 153 Çözüm Merkezi",
+      "subtitle": "Hızlı destek hattı",
+      "type": "tel",
+      "value": "153"
+    }
+  ],
+  "femaleDorms": [
+    {
+      "name": "Örnektepe Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 312 63 32",
+      "address": "Örnektepe Mah. Pazaraltı Sok. No:16 Beyoğlu/İstanbul"
+    },
+    {
+      "name": "Avcılar Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 312 63 09",
+      "address": "Üniversite Mah. Karanfil Sok. No:29 Avcılar/İstanbul"
+    },
+    {
+      "name": "Maltepe Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0216 586 56 60",
+      "address": "Yalı Mah. Rıhtım Cad. No:20 Maltepe/İstanbul"
+    },
+    {
+      "name": "Eyüpsultan Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 449 42 77",
+      "address": "Emniyettepe Mah. Kazım Karabekir Cad. No:2/1 Eyüpsultan/İstanbul"
+    },
+    {
+      "name": "Bayrampaşa Yükseköğrenim Kız Öğrenci Yurdu",
+      "phone": "0212 312 63 29",
+      "address": "Orta Mah. Fatih Parkı Altı, No:1 Bayrampaşa/İstanbul"
+    }
+  ],
+  "maleDorms": [
+    {
+      "name": "Esenyurt Yükseköğrenim Erkek Öğrenci Yurdu",
+      "phone": "0212 312 63 17",
+      "address": "Yeşilkent Mah. Nazım Hikmet Bulvarı No:14/16 Esenyurt/İstanbul"
+    },
+    {
+      "name": "Küçükçekmece Yükseköğrenim Erkek Öğrenci Yurdu",
+      "phone": "0212 411 06 90",
+      "address": "Halkalı Merkez Mah. Zeynebiye Cad. No:31 Küçükçekmece/İstanbul"
+    },
+    {
+      "name": "Bağcılar Cüneyt Arkın Erkek Öğrenci Yurdu",
+      "phone": "0212 312 63 26",
+      "address": "Yenimahalle Mah. Dökümcüler Cad. No: 20 Bağcılar/İstanbul"
+    },
+    {
+      "name": "Ümraniye Yükseköğrenim Erkek Öğrenci Yurdu",
+      "phone": "0216 586 56 61",
+      "address": "Esenşehir Mah. NATO Yolu Cad. No: 231 Ümraniye/İstanbul"
+    },
+    {
+      "name": "Gaziosmanpaşa Erkek Öğrenci Yurdu",
+      "phone": "0212 312 63 81",
+      "address": "Barbaros Hayrettin Paşa Mah. 1060. Sok. No: 5-7/1 Gaziosmanpaşa/İstanbul"
+    },
+    {
+      "name": "Şişli Erkek Öğrenci Yurdu",
+      "phone": "0212 449 92 65",
+      "address": "Halide Edip Adıvar Mah. Darülaceze Cad. No: 15/A Şişli/İstanbul"
+    }
+  ]
+}
