@@ -7,12 +7,6 @@
     { "iconKey": "school", "title": "Genç Üniversiteli", "subtitle": "gencuniversiteli.ibb.istanbul", "type": "url", "value": "https://gencuniversiteli.ibb.istanbul/" },
     { "iconKey": "call_quality", "title": "Alo 153 Çözüm Merkezi", "subtitle": "Hızlı destek hattı", "type": "tel", "value": "153" }
   ],
-  "capacity": {
-    "totalBeds": "bilinmiyor",
-    "femaleBeds": "bilinmiyor",
-    "maleBeds": "bilinmiyor",
-    "disabledBeds": "bilinmiyor"
-  },
   "femaleDorms": [
     { "name": "İBB Avcılar-1 Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0212 312 63 09", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Üniversite Mah. Karanfil Sok. No:29 Avcılar/İstanbul" },
     { "name": "İBB Avcılar-2 Yükseköğrenim Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Üniversite Mah. Karanfil Sok. No:31 Avcılar/İstanbul" },
