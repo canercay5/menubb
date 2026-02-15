@@ -8,23 +8,23 @@
     { "iconKey": "call_quality", "title": "Alo 153 Çözüm Merkezi", "subtitle": "Hızlı destek hattı", "type": "tel", "value": "153" }
   ],
   "femaleDorms": [
-    { "name": "İBB Avcılar-1 Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0212 312 63 09", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Üniversite Mah. Karanfil Sok. No:29 Avcılar/İstanbul" },
-    { "name": "İBB Avcılar-2 Yükseköğrenim Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Üniversite Mah. Karanfil Sok. No:31 Avcılar/İstanbul" },
-    { "name": "İBB Örnektepe Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0212 312 63 32", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Örnektepe Mah. Pazaraltı Sok. No:16 Beyoğlu/İstanbul" },
-    { "name": "İBB Bayrampaşa Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0212 312 63 29", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Orta Mah. Fatih Parkı Altı, No:1 Bayrampaşa/İstanbul" },
-    { "name": "İBB Maltepe Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0216 586 56 60", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Yalı Mah. Rıhtım Cad. No:20 Maltepe/İstanbul" },
-    { "name": "İBB Küçükçekmece Filenin Sultanları Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Halkalı Merkez Mah. Zeynebiye Cad. 1.Dilek Sok. No:11 Küçükçekmece/İstanbul" },
-    { "name": "İBB Kadıköy Zeren Ertaş Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Hasanpaşa Mah. Uhuvvet Sok. No:42D Kadıköy/İstanbul" },
-    { "name": "İBB Mustafa Necati Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "bilinmiyor" },
-    { "name": "İBB Filiz Akın Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "bilinmiyor" },
-    { "name": "İBB Zübeyde Hanım Kız Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "bilinmiyor" }
+    { "name": "İBB Avcılar-1 Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0 (212) 312 68 82", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Üniversite Mahallesi Cemil Meriç Sokak No : 13 Avcılar / İstanbul" },
+    { "name": "İBB Avcılar-2 Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0 (212) 449 47 58", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Üniversite Mahallesi Naz Sokak No:8 Avcılar / İstanbul" },
+    { "name": "İBB Örnektepe Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0 (212) 449 47 53", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Örnektepe Mahallesi Papatya Sokak No : 1 Beyoğlu / İstanbul" },
+    { "name": "İBB Bayrampaşa Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0 (212) 312 68 10", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Altıntepsi Mahallesi Akpınar Caddesi No: 97 – 99 Bayrampaşa / İstanbul" },
+    { "name": "İBB Maltepe Yükseköğrenim Kız Öğrenci Yurdu", "phone": "0 (216) 586 57 60", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Yalı Mahallesi İstasyonlu Sokak No : 9 Maltepe / İstanbul" },
+    { "name": "İBB Küçükçekmece Filenin Sultanları Kız Öğrenci Yurdu", "phone": "0 (212) 449 74 21", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Atakent Mahallesi Turgut Özal Bulvarı No : 34 Küçükçekmece / İstanbul" },
+    { "name": "İBB Kadıköy Zeren Ertaş Kız Öğrenci Yurdu", "phone": "0 (216) 586 57 48", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Hasanpaşa Mahallesi Uhuvvet Sokak No : 42 / D Kadıköy / İstanbul" },
+    { "name": "İBB Mustafa Necati Kız Öğrenci Yurdu", "phone": "0 (216) 333 52 86", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Cumhuriyet Mahallesi Kaside Sokak No: 5 Kartal / İstanbul" },
+    { "name": "İBB Filiz Akın Kız Öğrenci Yurdu", "phone": "0 ( 216 ) 333 53 11", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Caferağa Mahallesi Mühürdar Caddesi No : 64 Kadıköy / İstanbul" },
+    { "name": "İBB Zübeyde Hanım Kız Öğrenci Yurdu", "phone": "0 (212) 312 65 04", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Fulya Mahallesi Garaj Sokak No : 11 Şişli / İstanbul" }
   ],
   "maleDorms": [
-    { "name": "İBB Esenyurt Erkek Öğrenci Yurdu", "phone": "0212 312 63 17", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Yeşilkent Mah. Nazım Hikmet Bulvarı No:14/16 Esenyurt/İstanbul" },
-    { "name": "İBB Küçükçekmece Filenin Sultanları Erkek Öğrenci Yurdu", "phone": "bilinmiyor", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Halkalı Merkez Mah. Zeynebiye Cad. 1.Dilek Sok. No:11 Küçükçekmece/İstanbul" },
-    { "name": "İBB Bağcılar Cüneyt Arkın Erkek Öğrenci Yurdu", "phone": "0212 312 63 26", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Yenimahalle Mah. Dökümcüler Cad. No:20 Bağcılar/İstanbul" },
-    { "name": "İBB Ümraniye Erkek Öğrenci Yurdu", "phone": "0216 586 56 61", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Esenşehir Mah. NATO Yolu Cad. No:231 Ümraniye/İstanbul" },
-    { "name": "İBB Gaziosmanpaşa Erkek Öğrenci Yurdu", "phone": "0212 312 63 81", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Barbaros Hayrettin Paşa Mah. 1060. Sok. No:5-7/1 Gaziosmanpaşa/İstanbul" },
-    { "name": "İBB Şişli Erkek Öğrenci Yurdu", "phone": "0212 449 92 65", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Halide Edip Adıvar Mah. Darülaceze Cad. No:15/A Şişli/İstanbul" }
+    { "name": "İBB Esenyurt Erkek Öğrenci Yurdu", "phone": "0 (212) 449 45 78", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Zafer Mahallesi Rıfat Ilgaz Caddesi 160. Sokak No : 5 Esenyurt / İstanbul" },
+    { "name": "İBB Küçükçekmece Filenin Sultanları Erkek Öğrenci Yurdu", "phone": "0 (212) 449 74 22", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Atakent Mahallesi Turgut Özal Bulvarı No : 34 / A Küçükçekmece / İstanbul" },
+    { "name": "İBB Bağcılar Cüneyt Arkın Erkek Öğrenci Yurdu", "phone": "0 (212) 312 69 03", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Yenimahalle Mahallesi Mevlana Caddesi 1539 Sokak No : 95 Bağcılar / İstanbul" },
+    { "name": "İBB Ümraniye Erkek Öğrenci Yurdu", "phone": "0 (216) 586 57 84", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Şerifali Mahallesi Büyükyavuz Sokak No : 50 Ümraniye / İstanbul" },
+    { "name": "İBB Gaziosmanpaşa Erkek Öğrenci Yurdu", "phone": "0 (212) 312 68 17", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "Fevzi Çakmak Mahallesi 758.Sokak No : 3 Küçükköy Meydan Gaziosmanpaşa / İstanbul" },
+    { "name": "İBB Şişli Erkek Öğrenci Yurdu", "phone": "0 (212) 312 68 91", "email": "bilinmiyor", "capacity": "bilinmiyor", "address": "İzzetpaşa Mahallesi Seçkin Sokak No : 2 Şişli / İstanbul" }
   ]
 }
