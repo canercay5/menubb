@@ -2,13 +2,27 @@
   "version": "1",
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
-        {
+    {
+      "id": "yemek-saatleri-sahur-iftar-2026-02-13",
+      "title": "Ramazan Ayı Yemek Saaatleri güncelleme!",
+      "body": "Merhabalar arkadaşlar,\n Öncelikle herkese hayırlı bir ramazan ayı geçirmeyi temenni ediyoruz.\n 11 ayın sultanı Ramazan ayında Kahvaltı saatleri\n Hafta içi\n 05.00-10.00\n Hafta sonu\n 05.00-11.00 \n Akşam yemeği saatleri;\n 18.00-21.00 saatleri aralığında olacaktır.",
+      "date": "2026-02-18",
+      "pinned": true
+    }, 
+    {
+      "id": "duyuru-2-2026-02-13",
+      "title": "Ramazan Ayı Yemek Saaatleri güncelleme-2!",
+      "body": "İftar saatlerinde yoğunluk oluşmaması adına oruç tutmayan arkadaşlarımızdan zamanlama konusunda hassasiyet bekliyoruz, şimdiden hepinize teşekkür ederiz.",
+      "date": "2026-02-18",
+      "pinned": true
+    },   
+    {
       "id": "vote*menu-2026-02-13",
       "title": "Hadi menülere oy ver!",
       "body": "Sizlerin en sevdiği yemekleri görmek istiyoruz. Tamamen anonim olarak menülere oy verebilirsiniz.",
       "date": "2026-02-13",
-      "pinned": true
-        },  
+      "pinned": false
+    },  
     {
       "id": "welcome-2026-02-11",
       "title": "Hoş geldiniz!",
