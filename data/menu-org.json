@@ -585,11 +585,11 @@
     ],
     "aksam": [
       { "category": "Ana Menü", "name": "HAVUÇLU KEREVİZ ÇORBASI (1,3,4,8,9)", "calories": "93" },
-      { "category": "Ana Menü", "name": "BARBEKÜ SOSLU TAVUK PİRZOLA / ELMA DİLİM PATATES (1,3,4,6,12,14)", "calories": "293" },
+      { "category": "Ana Menü", "name": "TAVUK SOTE", "calories": "208" },
       { "category": "Ana Menü", "name": "SADE SPAGETTİ(1)", "calories": "216" },
-      { "category": "Ana Menü", "name": "MEYVE (MUZ)", "calories": "178" },
- { "category": "Ana Menü", "name": "ŞÖBİYET", "calories": "178" },
- { "category": "Ana Menü", "name": "ŞERBET", "calories": "178" },
+      { "category": "Ana Menü", "name": "PATATES SALATASI (1,12)", "calories": "82" },
+      { "category": "Ana Menü", "name": "ŞÖBİYET", "calories": "178" },
+      { "category": "Ana Menü", "name": "LİMONATA", "calories": "73" },
       { "category": "Salatbar", "name": "DEREOTLU YOĞURT SALATASI (4)", "calories": "43" },
       { "category": "Salatbar", "name": "KIRMIZI LAHANA(12)", "calories": "24" },
       { "category": "Salatbar", "name": "Z.YAĞLI BARBUNYA (1,8)", "calories": "98" },
@@ -631,8 +631,8 @@
       { "category": "Kahvaltılık", "name": "DOMATES/SALATALIK", "calories": "8" },
       { "category": "Kahvaltılık", "name": "HAŞLANMIŞ YUMURTA (3)", "calories": "78" },
       { "category": "Kahvaltılık", "name": "VİŞNE REÇELİ (12)", "calories": "75" },
-      { "category": "Kahvaltılık", "name": "POĞAÇA(1,3,4,14)", "calories": "243" },
-      { "category": "Kahvaltılık", "name": "SOSLU SOSİS TAVA", "calories": "156" }
+      { "category": "Kahvaltılık", "name": "SİMİT (1,3,4,14)", "calories": "275" },
+      { "category": "Kahvaltılık", "name": "MEYVE (MUZ)", "calories": "178" }
     ],
     "aksam": [
       { "category": "Ana Menü", "name": "DEREOTLU KABAK ÇORBASI (1,3,4,8)", "calories": "114" },

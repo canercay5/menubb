@@ -3,18 +3,25 @@
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
     {
+      "id": "subat-revice-2026-02-22",
+      "title": "Şubat Ayı Revize",
+      "body": "Şubat ayı menüleri revize edilmiştir.",
+      "date": "2026-02-22",
+      "pinned": true
+    }, 
+    {
       "id": "yemek-saatleri-sahur-iftar-2026-02-13",
       "title": "Ramazan Ayı Yemek Saaatleri güncelleme!",
       "body": "🌙 Hayırlı Ramazanlar dileriz!\n\n🍳 Kahvaltı Saatleri\n• Hafta içi: 05.00 - 10.00\n• Hafta sonu: 05.00 - 11.00\n\n🍲 Akşam Yemeği\n• Her gün: 18.00 - 21.00",
       "date": "2026-02-18",
-      "pinned": true
+      "pinned": false
     }, 
     {
       "id": "duyuru-2-2026-02-13",
       "title": "Ramazan Ayı Yemek Saaatleri güncelleme-2!",
       "body": "İftar saatlerinde yoğunluk oluşmaması adına oruç tutmayan arkadaşlarımızdan zamanlama konusunda hassasiyet bekliyoruz, şimdiden hepinize teşekkür ederiz.",
       "date": "2026-02-18",
-      "pinned": true
+      "pinned": false
     },   
     {
       "id": "vote*menu-2026-02-13",
