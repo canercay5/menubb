@@ -3,11 +3,18 @@
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
     {
+      "id": "mart-first-8-2026-02-28",
+      "title": "Mart Ayı Yeni Menü",
+      "body": "Mart ayının ilk 8 günü için yeni menüler eklenmiştir.",
+      "date": "2026-02-28",
+      "pinned": true
+    }, 
+    {
       "id": "subat-revice-2026-02-22",
       "title": "Şubat Ayı Revize",
       "body": "Şubat ayı menüleri revize edilmiştir.",
       "date": "2026-02-22",
-      "pinned": true
+      "pinned": false
     }, 
     {
       "id": "yemek-saatleri-sahur-iftar-2026-02-13",
