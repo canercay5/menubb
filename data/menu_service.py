@@ -22,7 +22,8 @@ class MenuDataExtractor:
     def extract_aksam(self):
         sheet = self.wb['AKŞAM MENÜ']
         # M4 (Col 13) Perşembe ise, Pazartesi A (Col 1)'den başlar.
-        row_starts = [4, 13, 22, 31, 40]
+        # Bazı dosyalarda ayın ilk günü (örn. Pazar) üstte ayrı bir blok olarak gelebilir (örn. satır 3).
+        row_starts = [3, 4, 13, 22, 31, 40]
         col_starts = [1, 5, 9, 13, 17, 21, 25] # A, E, I, M, Q, U, Y
 
         for r_start in row_starts:
@@ -31,19 +32,24 @@ class MenuDataExtractor:
                 if date_str:
                     if date_str not in self.menu_registry:
                         self.menu_registry[date_str] = {"kahvalti": [], "aksam": []}
+
+                    def _norm_name(value):
+                        # CSV kaynaklarında genellikle CRLF kullanılıyor; Excel hücreleri LF döndürebiliyor.
+                        return str(value).strip().replace('\r\n', '\n').replace('\n', '\r\n')
                     
-                    # Akşam: Ofset +2 (4. satır tarih, 5. satır başlık, 6. satır yemek)
+                    # Akşam: Ofset +2 (4. satır tarih, 5. satır başlık, 6. satırdan itibaren yemekler)
                     items = []
-                    for i in range(2, 7):
+                    # 6 satır: çorba, ana yemek, yardımcı, salata/ek, tatlı, içecek/iftariyelik
+                    for i in range(2, 8):
                         name = sheet.cell(row=r_start + i, column=c_start).value
                         cal = sheet.cell(row=r_start + i, column=c_start + 1).value
                         if name and str(name).strip().upper() != 'TOPLAM':
-                            items.append({"category": "Ana Menü", "name": str(name).strip(), "calories": f"{cal} kcal"})
+                            items.append({"category": "Ana Menü", "name": _norm_name(name), "calories": f"{cal} kcal"})
                         
                         s_name = sheet.cell(row=r_start + i, column=c_start + 2).value
                         s_cal = sheet.cell(row=r_start + i, column=c_start + 3).value
                         if s_name and str(s_name).strip().upper() != 'TOPLAM':
-                            items.append({"category": "Salatbar", "name": str(s_name).strip(), "calories": f"{s_cal} kcal"})
+                            items.append({"category": "Salatbar", "name": _norm_name(s_name), "calories": f"{s_cal} kcal"})
                     self.menu_registry[date_str]["aksam"] = items
 
     def extract_kahvalti(self):
@@ -76,7 +82,7 @@ class MenuDataExtractor:
 
 # --- Uygulama Noktası ---
 if __name__ == "__main__":
-    extractor = MenuDataExtractor('data\subat.xlsx')
+    extractor = MenuDataExtractor('mart8.xlsx')
     extractor.extract_aksam()
     extractor.extract_kahvalti()
     extractor.save_json('menu.json')
