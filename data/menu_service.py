@@ -82,7 +82,7 @@ class MenuDataExtractor:
 
 # --- Uygulama Noktası ---
 if __name__ == "__main__":
-    extractor = MenuDataExtractor('mart8.xlsx')
+    extractor = MenuDataExtractor('data/mart.xlsx')
     extractor.extract_aksam()
     extractor.extract_kahvalti()
     extractor.save_json('menu.json')

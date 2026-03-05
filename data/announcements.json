@@ -3,11 +3,18 @@
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
     {
+      "id": "mart-2026-03",
+      "title": "Mart Ayı REVİZE Menü",
+      "body": "Mart ayı REVİZE menüler eklenmiştir. (Tutarlı olmayan veriler olabilir.)",
+      "date": "2026-03-06",
+      "pinned": true
+    },
+    {
       "id": "mart-first-8-2026-02-28",
       "title": "Mart Ayı Yeni Menü",
       "body": "Mart ayının ilk 8 günü için yeni menüler eklenmiştir.",
       "date": "2026-02-28",
-      "pinned": true
+      "pinned": false
     }, 
     {
       "id": "subat-revice-2026-02-22",
