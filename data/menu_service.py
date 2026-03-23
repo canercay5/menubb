@@ -201,7 +201,7 @@ class MenuDataExtractor:
 # --- Uygulama Noktası ---
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Excel menülerini JSON'a çevirir ve kontrol raporu üretir.")
-    parser.add_argument("--excel", default="data/mart.xlsx", help="Kaynak Excel dosyası")
+    parser.add_argument("--excel", default="data/mart-last.xlsx", help="Kaynak Excel dosyası")
     parser.add_argument("--out", default="menu.json", help="Üretilecek menu.json yolu")
     parser.add_argument("--menu-org", default="data/menu-org.json", help="Karşılaştırılacak menu-org.json yolu")
     parser.add_argument("--sync-menu-org", action="store_true", help="menu-org.json'u (non-empty) güncelle")
