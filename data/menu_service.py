@@ -1,7 +1,7 @@
 import openpyxl
 import json
 import re
-from datetime import datetime
+from datetime import date, datetime
 import argparse
 from pathlib import Path
 
@@ -13,24 +13,79 @@ class MenuDataExtractor:
         self.wb = openpyxl.load_workbook(file_path, data_only=True)
         self.menu_registry = {}
 
+    @staticmethod
+    def _tr_upper_ascii(text: str) -> str:
+        """Türkçe karakterleri ASCII'ye yaklaştırarak sheet name eşleştirmeyi sağlamlaştırır."""
+        if text is None:
+            return ""
+        t = str(text).strip().upper()
+        # Yaygın Türkçe harfleri sadeleştir.
+        t = (
+            t.replace("Ç", "C")
+            .replace("Ğ", "G")
+            .replace("İ", "I")
+            .replace("İ", "I")
+            .replace("Ö", "O")
+            .replace("Ş", "S")
+            .replace("Ü", "U")
+        )
+        # Bazı terminal/encoding durumlarında görülen bozuk karakterleri yok say.
+        t = t.replace("�", "")
+        return t
+
+    @staticmethod
+    def _parse_date_text(text: str) -> str | None:
+        """Excel hücresindeki tarih yazısını ISO (YYYY-MM-DD) formatına çevirir."""
+        if not text:
+            return None
+        t = str(text).strip()
+        if not t:
+            return None
+        # Bazı dosyalarda "09.04..2026" gibi hatalı yazımlar var.
+        t = re.sub(r"([./-])\1+", r"\1", t)
+
+        m = re.search(r"\b(\d{4})-(\d{2})-(\d{2})\b", t)
+        if m:
+            try:
+                d = date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+            except ValueError:
+                return None
+            return d.isoformat()
+
+        m = re.search(r"\b(\d{1,2})[./-]+(\d{1,2})[./-]+(\d{2,4})\b", t)
+        if not m:
+            return None
+
+        day = int(m.group(1))
+        month = int(m.group(2))
+        year = int(m.group(3))
+        if year < 100:
+            year = 2000 + year
+
+        try:
+            d = date(year, month, day)
+        except ValueError:
+            return None
+        return d.isoformat()
+
     def _find_sheet(self, kind: str):
         names = list(self.wb.sheetnames)
         if kind == "kahvalti":
             for name in names:
-                if name.strip().upper() == "KAHVALTI":
+                if self._tr_upper_ascii(name) == "KAHVALTI":
                     return self.wb[name]
             for name in names:
-                if "KAH" in name.upper():
+                if "KAHVALTI" in self._tr_upper_ascii(name) or "KAH" in self._tr_upper_ascii(name):
                     return self.wb[name]
             raise KeyError("KAHVALTI sayfası bulunamadı")
 
         if kind == "aksam":
             for name in names:
-                if name.strip().upper() == "AKŞAM MENÜ":
+                if self._tr_upper_ascii(name) in ("AKSAM MENU", "AKSAM MENUSU", "AKSAM MENÜ", "AKSAM MENU"):
                     return self.wb[name]
             for name in names:
-                up = name.upper()
-                if "AK" in up and "MEN" in up:
+                up = self._tr_upper_ascii(name)
+                if "AKSAM" in up and ("MENU" in up or "MEN" in up):
                     return self.wb[name]
             raise KeyError("AKŞAM MENÜ sayfası bulunamadı")
 
@@ -44,27 +99,52 @@ class MenuDataExtractor:
         if value is None:
             return None
         text = str(value).strip()
-        return f"{text} kcal" if text else None
+        if not text:
+            return None
+        if re.search(r"\bkcal\b", text, flags=re.IGNORECASE):
+            # "120 kcal" gibi değerleri tek biçime indir.
+            text = re.sub(r"\s*kcal\b", "", text, flags=re.IGNORECASE).strip()
+        return f"{text} kcal"
 
     def _iter_date_anchors(self, sheet, max_rows: int, max_cols: int):
         """Sayfadaki datetime hücrelerini (tarih anchor) döndürür."""
         seen = set()
         for r in range(1, max_rows + 1):
             for c in range(1, max_cols + 1):
-                v = sheet.cell(row=r, column=c).value
+                cell = sheet.cell(row=r, column=c)
+                v = cell.value
+
+                date_str = None
                 if isinstance(v, datetime):
-                    key = (v.date().isoformat(), r, c)
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                    yield v.strftime('%Y-%m-%d'), r, c
+                    date_str = v.date().isoformat()
+                elif isinstance(v, date):
+                    date_str = v.isoformat()
+                elif isinstance(v, (int, float)) and getattr(cell, "is_date", False):
+                    # Bazı Excel'ler tarihi sayısal seri olarak tutuyor.
+                    try:
+                        from openpyxl.utils.datetime import from_excel
+
+                        dt = from_excel(v, self.wb.epoch)
+                        date_str = dt.date().isoformat()
+                    except Exception:
+                        date_str = None
+                elif isinstance(v, str):
+                    date_str = self._parse_date_text(v)
+
+                if not date_str:
+                    continue
+
+                key = (date_str, r, c)
+                if key in seen:
+                    continue
+                seen.add(key)
+                yield date_str, r, c
 
     def _get_formatted_date(self, cell_value):
         if isinstance(cell_value, datetime):
             return cell_value.strftime('%Y-%m-%d')
         if isinstance(cell_value, str):
-            match = re.search(r'(\d{4}-\d{2}-\d{2})', cell_value)
-            return match.group(1) if match else None
+            return self._parse_date_text(cell_value)
         return None
 
     def extract_aksam(self):
@@ -76,7 +156,7 @@ class MenuDataExtractor:
 
         # Akşam: tarih hücresinden itibaren +2..+7 satırlarında (6 satır) iki blok var:
         # Ana Menü: (c, c+1) | Salatbar: (c+2, c+3)
-        for date_str, r_start, c_start in self._iter_date_anchors(sheet, max_rows=200, max_cols=40):
+        for date_str, r_start, c_start in self._iter_date_anchors(sheet, max_rows=250, max_cols=60):
             self._ensure_date_entry(date_str)
             items = []
             for i in range(2, 8):
@@ -105,7 +185,7 @@ class MenuDataExtractor:
         sheet = self._find_sheet("kahvalti")
 
         # Kahvaltı: tarih hücresinden itibaren +1..+7 satırlarında (7 satır) isim+kalori blokları var.
-        for date_str, r_start, c_start in self._iter_date_anchors(sheet, max_rows=200, max_cols=40):
+        for date_str, r_start, c_start in self._iter_date_anchors(sheet, max_rows=250, max_cols=60):
             self._ensure_date_entry(date_str)
             items = []
             for i in range(1, 8):
@@ -114,7 +194,7 @@ class MenuDataExtractor:
                 if name and str(name).strip().upper() != 'TOPLAM':
                     items.append({
                         "category": "Kahvaltılık",
-                        "name": str(name).strip(),
+                        "name": str(name).strip().replace('\r\n', '\n').replace('\n', '\r\n'),
                         "calories": self._format_calories(cal)
                     })
             if items:
@@ -126,7 +206,7 @@ class MenuDataExtractor:
         with open(output_path, 'w', encoding='utf-8') as f:
             json.dump(sorted_data, f, ensure_ascii=False, indent=2)
 
-    def compare_with_menu_org(self, menu_org_path: str = 'data/menu-org.json'):
+    def compare_with_menu_org(self, menu_org_path: str = 'menu-org.json'):
         """menu_registry ile menu-org.json arasındaki farkları raporlar."""
         path = Path(menu_org_path)
         if not path.exists():
@@ -171,7 +251,7 @@ class MenuDataExtractor:
 
     def sync_menu_org(
         self,
-        menu_org_path: str = 'data/menu-org.json',
+        menu_org_path: str = 'menu-org.json',
         only_if_non_empty: bool = True,
         add_missing_dates: bool = False,
     ):
@@ -201,9 +281,9 @@ class MenuDataExtractor:
 # --- Uygulama Noktası ---
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Excel menülerini JSON'a çevirir ve kontrol raporu üretir.")
-    parser.add_argument("--excel", default="data/mart-last.xlsx", help="Kaynak Excel dosyası")
+    parser.add_argument("--excel", default="nisan.xlsx", help="Kaynak Excel dosyası")
     parser.add_argument("--out", default="menu.json", help="Üretilecek menu.json yolu")
-    parser.add_argument("--menu-org", default="data/menu-org.json", help="Karşılaştırılacak menu-org.json yolu")
+    parser.add_argument("--menu-org", default="menu-org.json", help="Karşılaştırılacak menu-org.json yolu")
     parser.add_argument("--sync-menu-org", action="store_true", help="menu-org.json'u (non-empty) güncelle")
     parser.add_argument("--add-missing-dates", action="store_true", help="Sync sırasında menu-org.json'da olmayan günleri de ekle")
     args = parser.parse_args()
