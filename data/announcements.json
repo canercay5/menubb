@@ -3,11 +3,18 @@
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
     {
+      "id": "mayis-2026-05-01",
+      "title": "Mayıs Ayı Menüsü Eklendi",
+      "body": "1 mayıs 2026 tarihli menüler eklenmiştir.",
+      "date": "2026-04-06",
+      "pinned": true
+    },
+    {
       "id": "nisan-2026-04-01",
       "title": "Nisan Ayı Menüsü Eklendi",
       "body": "1 nisan 2026 tarihli menüler eklenmiştir.",
       "date": "2026-03-06",
-      "pinned": true
+      "pinned": false
     },
     {
       "id": "mart-first-8-2026-02-28",

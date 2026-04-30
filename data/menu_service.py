@@ -5,6 +5,53 @@ from datetime import date, datetime
 import argparse
 from pathlib import Path
 
+
+def backup_and_prune_month(
+    menu_org_path: str,
+    month_prefix: str,
+    archive_dir: str = "archive/json",
+    output_path: str | None = None,
+) -> tuple[str, int, int]:
+    """Back up a month from menu-org.json to archive and remove it from menu-org.json.
+
+    month_prefix format: YYYY-MM (e.g., 2026-04)
+    Returns: (backup_file_path, backed_up_days, remaining_days)
+    """
+    mp = str(month_prefix).strip()
+    if not re.fullmatch(r"\d{4}-\d{2}", mp):
+        raise ValueError("month_prefix must be in YYYY-MM format (e.g., 2026-04)")
+
+    org_path = Path(menu_org_path)
+    if not org_path.exists():
+        raise FileNotFoundError(f"menu-org.json bulunamadı: {menu_org_path}")
+
+    org = json.loads(org_path.read_text(encoding="utf-8"))
+    prefix = f"{mp}-"
+    month_keys = sorted([k for k in org.keys() if isinstance(k, str) and k.startswith(prefix)])
+
+    backup = {k: org[k] for k in month_keys}
+
+    archive_path = Path(archive_dir)
+    archive_path.mkdir(parents=True, exist_ok=True)
+
+    if output_path:
+        out_path = Path(output_path)
+    else:
+        out_path = archive_path / f"menu-{mp}.json"
+        if out_path.exists():
+            ts = datetime.now().strftime("%Y%m%d-%H%M%S")
+            out_path = archive_path / f"menu-{mp}-{ts}.json"
+
+    out_path.write_text(json.dumps(backup, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    for k in month_keys:
+        org.pop(k, None)
+
+    sorted_org = dict(sorted(org.items()))
+    org_path.write_text(json.dumps(sorted_org, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    return str(out_path), len(backup), len(sorted_org)
+
 class MenuDataExtractor:
     """Excel verilerini JSON formatına dönüştüren Domain Service."""
     
@@ -286,7 +333,33 @@ if __name__ == "__main__":
     parser.add_argument("--menu-org", default="menu-org.json", help="Karşılaştırılacak menu-org.json yolu")
     parser.add_argument("--sync-menu-org", action="store_true", help="menu-org.json'u (non-empty) güncelle")
     parser.add_argument("--add-missing-dates", action="store_true", help="Sync sırasında menu-org.json'da olmayan günleri de ekle")
+    parser.add_argument(
+        "--backup-and-prune-month",
+        default=None,
+        help="menu-org.json içinden belirtilen ayı (YYYY-MM) archive/json altına yedekler ve menu-org.json'dan siler",
+    )
+    parser.add_argument(
+        "--archive-dir",
+        default="archive/json",
+        help="Backup dosyasının yazılacağı klasör (varsayılan: archive/json)",
+    )
+    parser.add_argument(
+        "--backup-out",
+        default=None,
+        help="Backup dosya yolu (verilmezse archive-dir altında menu-YYYY-MM.json)",
+    )
     args = parser.parse_args()
+
+    if args.backup_and_prune_month:
+        out_path, backed_up_days, remaining_days = backup_and_prune_month(
+            menu_org_path=args.menu_org,
+            month_prefix=args.backup_and_prune_month,
+            archive_dir=args.archive_dir,
+            output_path=args.backup_out,
+        )
+        print(f"Backup yazıldı: {out_path}")
+        print(f"Yedeklenen gün: {backed_up_days} | Kalan toplam gün: {remaining_days}")
+        raise SystemExit(0)
 
     extractor = MenuDataExtractor(args.excel)
     extractor.extract_aksam()
