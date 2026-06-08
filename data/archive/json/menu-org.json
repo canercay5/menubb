@@ -1,0 +1,604 @@
+{
+  "2026-06-01": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "LABNE PEYNİR (4)",
+        "calories": "50 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "HELVA(1,4,14)",
+        "calories": "117 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "AÇMA (1,3,4,14)",
+        "calories": "381 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "PEYNİRLİ OMLET (3,4)",
+        "calories": "205 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "ŞEHRİYE ÇORBASI (1)",
+        "calories": "181 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "ŞAKŞUKA",
+        "calories": "76 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "TAS KEBAP (1,8)",
+        "calories": "242 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KARIŞIK SALATA(KIRMIZI LAHANA-HAVUÇ) (12)",
+        "calories": "34 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "MISIRLI PİRİNÇ PİLAVI (1)",
+        "calories": "281 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KORNİŞON TURŞU (12)",
+        "calories": "5 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "SOĞUK ÇAY",
+        "calories": "99 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "YOĞURT (4)",
+        "calories": "39 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "Z.YAĞLI ORBİT FASULYE (1,8)",
+        "calories": "48 kcal"
+      }
+    ]
+  },
+  "2026-06-02": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "KAŞAR PEYNİR (4)",
+        "calories": "140 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "KAKAOLU FINDIK EZMESİ (1,4,8,11)",
+        "calories": "147 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SU BÖREĞİ(1,3,4)",
+        "calories": "358 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "MENEMEN (3)",
+        "calories": "90 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "EZOGELİN ÇORBA (1,8)",
+        "calories": "125 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "PEMBE SULTAN (4,12)",
+        "calories": "72 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "PATLICAN MUSAKKA (1,4)",
+        "calories": "131 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "DOM. SOSLU PATATES KIZARTMASI (1)",
+        "calories": "87 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "İÇ PİLAV (1,7,8,11,12)",
+        "calories": "284 kcal" 
+      },
+      {
+        "category": "Salatbar",
+        "name": "KÖZ SOGAN SALATASI",
+        "calories": "21 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "SÜTLÜ TATLI (1,3,4)",
+        "calories": "180 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "HUMUS (1,8,14)",
+        "calories": "68 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "Z.YAĞLI BROKOLİ SALATASI (1,3,4,8,14)",
+        "calories": "43 kcal"
+      }
+    ]
+  },
+  "2026-06-03": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "ÇEÇİL PEYNİR (4)",
+        "calories": "113 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "ÇİLEK REÇELİ (12)",
+        "calories": "55 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "PATATES HAŞLAMA (1,12)",
+        "calories": "82 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "HAŞLANMIŞ YUMURTA (3)",
+        "calories": "78 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "MENGEN ÇORBASI (1,3,4,8)",
+        "calories": "141 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "ÇOBAN SALATASI",
+        "calories": "32 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "İSKENDER (1,3,4)",
+        "calories": "372 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12)",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "HAVUÇ DİLİM BAKLAVA  (1,3,4,7,8,11)",
+        "calories": "470 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KARIŞIK TURŞU (12)",
+        "calories": "12 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "GAZLI İÇECEK",
+        "calories": "110 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "Z.YAĞLI KABAK KALYE (1)",
+        "calories": "36 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "AMERİKAN SALATASI (1,3,4,8,12)",
+        "calories": "117 kcal"
+      }
+    ]
+  },
+  "2026-06-04": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "ÖRGÜ PEYNİR (4)",
+        "calories": "115 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "TAHİN PEKMEZ (14)",
+        "calories": "109 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "POĞAÇA(1,3,4,14)",
+        "calories": "243 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SUCUKLU YUMURTA (3)",
+        "calories": "242 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "MERCİMEK ÇORBASI (1,8)",
+        "calories": "137 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "MISIRLI YEŞİL ZEYTİN SALATASI",
+        "calories": "28 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "ARPACIK SOĞANLI TAVUK YAHNİ (1,3,4,8)",
+        "calories": "328 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "DEREOTLU YOĞURT SALATASI (3,4)",
+        "calories": "43 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "FESLEĞEN SOSLU MAKARNA (1,3,4)",
+        "calories": "227 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "PANCAR TURŞUSU (12)",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "MEYVE (KAYISI) (12)",
+        "calories": "94 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "DOM.SOSLU BİBER KIZART.",
+        "calories": "26 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "PATATES SALATASI (1,12)",
+        "calories": "75 kcal"
+      }
+    ]
+  },
+  "2026-06-05": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SALAM",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "KAYISI REÇELİ (12)",
+        "calories": "58 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "PATATES KIZARTMASI (1)",
+        "calories": "312 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "HAŞLANMIŞ YUMURTA (3)",
+        "calories": "78 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "SEBZE ÇORBASI (1,3,4,8)",
+        "calories": "114 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KAŞIK SALATA",
+        "calories": "51 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "MANTARLI ET SOTE (2,13)",
+        "calories": "226 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KIRMIZI LAHANA (12)",
+        "calories": "24 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "TEL ŞEHRİYELİ PİRİNÇ PİLAVI (1)",
+        "calories": "258 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KÖZ SOGAN SALATASI",
+        "calories": "21 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "AYRAN (4)",
+        "calories": "75 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "MAYDANOZLU KÖZLENMİŞ PATLICAN SALATASI (12)",
+        "calories": "7 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "ENGİNAR SALATASI (1,7,8,10,11,12)",
+        "calories": "37 kcal"
+      }
+    ]
+  },
+  "2026-06-06": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "KAŞAR PEYNİR (4)",
+        "calories": "140 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "KAKAOLU FINDIK EZMESİ (1,4,8,11)",
+        "calories": "147 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİMİT (1,3,4,14)",
+        "calories": "275 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SADE OMLET (3)",
+        "calories": "183 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "EZOGELİN ÇORBA (1,8)",
+        "calories": "125 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "VİŞNELİ YAPRAK SARMA (1,7,8,10,11,12,14)",
+        "calories": "71 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "TAZE FASULYE (8)",
+        "calories": "112 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "GAVURDAĞI SALATASI (7,11)",
+        "calories": "54 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "MANTI (1,3,4)",
+        "calories": "302 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "BEYAZ LAHANA TURŞUSU (12)",
+        "calories": "10 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "ŞEKERPARE (1,3,7,8,11)",
+        "calories": "326 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "DOM. SOSLU PATATES KIZARTMASI (1)",
+        "calories": "87 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KARIŞIK KIZARTMA (PATLICAN-KABAK)",
+        "calories": "71 kcal"
+      }
+    ]
+  },
+  "2026-06-07": {
+    "kahvalti": [
+      {
+        "category": "Kahvaltılık",
+        "name": "BEYAZ PEYNİR(4)",
+        "calories": "120 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "SİYAH ZEYTİN/YEŞİL ZEYTİN",
+        "calories": "40 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "DOMATES/SALATALIK",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "TEREYAĞ(4)",
+        "calories": "215 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "BAL",
+        "calories": "76 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "PEYNİRLİ KALEM BÖREK(1,3,4)",
+        "calories": "311 kcal"
+      },
+      {
+        "category": "Kahvaltılık",
+        "name": "HAŞLANMIŞ YUMURTA (3)",
+        "calories": "78 kcal"
+      }
+    ],
+    "aksam": [
+      {
+        "category": "Ana Menü",
+        "name": "DÜĞÜN ÇORBA (1,3,4,8)",
+        "calories": "119 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "MÜCVER (1,3)",
+        "calories": "41 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "TAVUK HAŞLAMA (1,3,4,8)",
+        "calories": "301 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12)",
+        "calories": "8 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "NAPOLİTEN SOSLU SPAGETTİ (1,3,4)",
+        "calories": "226 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "KIRMIZI LAHANA (12)",
+        "calories": "24 kcal"
+      },
+      {
+        "category": "Ana Menü",
+        "name": "MEYVE (ELMA)",
+        "calories": "92 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "HAYDARİ (4)",
+        "calories": "41 kcal"
+      },
+      {
+        "category": "Salatbar",
+        "name": "BÖRÜLCE SALATASI (1,8,12)",
+        "calories": "81 kcal"
+      }
+    ]
+  }
+}
