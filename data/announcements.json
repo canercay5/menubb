@@ -2,12 +2,19 @@
   "version": "1",
   "updatedAt": "2026-02-12T12:00:00+03:00",
   "items": [
+            {
+      "id": "eylül-2026",
+      "title": "Yeni Dönem Hayırlı Olsun",
+      "body": "Yeni dönemde tüm öğrencilerimize başarılar dileriz. Eylül menü eklenmiştir.",
+      "date": "2026-09-14",
+      "pinned": false
+    },
         {
       "id": "temmuz-2026-05-01",
       "title": "YAZ TATİLİ",
       "body": "Yaz dönemi boyunca veri girişi yapılmayacaktır. İyi tatiller dileriz.",
       "date": "2026-07-02",
-      "pinned": true
+      "pinned": false
     },
     {
       "id": "mayis-2026-05-01",

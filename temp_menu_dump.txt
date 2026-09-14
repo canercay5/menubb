@@ -1,0 +1,103 @@
+SHEET:AKŞAM MENÜ
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ İBB ÖĞRENCİ YURTLARI EYLÜL AYI AKŞAM YEMEĞİ MENÜSÜ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Pazartesi, Eylül 14, 2026 |  |  |  | Salı, Eylül 15, 2026 |  |  |  | Çarşamba, Eylül 16, 2026 |  |  |  | Perşembe, Eylül 17, 2026 |  |  |  | Cuma, Eylül 18, 2026 |  |  | 
+MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL
+ŞEHRİYE ÇORBASI (1,3,4,8) | 181 | HUMUS (1,8,14) | 68 | MERCİMEK ÇORBASI (1,8) | 137 | KARIŞIK TURŞU (12) | 12 | KROTONLU ÇORBA (1,3,4,8) | 143 | KARIŞIK SALATA (KIRMIZI LAHANA-MISIRLI YEŞİL ZEYTİN) (8,12) | 33 | EZOGELİN ÇORBA (1,8) | 125 | MAYDANOZLU KÖZLENMİŞ PATLICAN SALATASI (12) | 7 | MISIR ÇORBASI (1,3,4,8) | 95 | KARIŞIK SALATA(KIRMIZI LAHANA-HAVUÇ) (12) | 34
+ET DÖNER / FIRINLANMIŞ ELMA DİLİM PATATES (1,4) | 323 | KARIŞIK SALATA(KIRMIZI LAHANA-HAVUÇ) (12) | 34 | TAZE FASULYE (8) | 112 | DEREOTLU MISIRLI YEŞİL ZEYTİN SALATASI (8) | 29 | HÜNKAR BEĞENDİ (1,3,4,7,11) | 284 | KÖZ SOGAN SALATASI | 21 | FIRINDA TAVUK BUT / PATATES KROKET (1,4) | 321 | ÇOBAN SALATASI | 32 | PİDELİ KÖFTE IZGARA (1,3,4) | 337 | MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12) | 8
+MISIRLI PİRİNÇ PİLAVI (1,8) | 281 | GAVURDAĞI SALATASI (7,11) | 54 | MANTI (1,3,4) | 302 | MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12) | 8 | SADE PİRİNÇ PİLAVI (1) | 256 | PİYAZ (1,3,8,14) | 54 | NAPOLİTEN SOSLU SPAGETTİ (1,3,4) | 226 | YOĞURTLU BİBER BORANİ (4) | 42 | KADAYIF (1,3,4,11) | 358 | KÖZ SOGAN SALATASI | 21
+AYRAN (4) | 75 | KÖZ SOGAN SALATASI | 21 | MEYVE (KAVUN) | 83 | PATATES SALATASI (1,12) | 75 | ŞEKERPARE (1,3,7,8,11) | 326 | CACIK (4) | 42 | SOĞUK ÇAY | 99 | PANCAR TURŞUSU (12) | 39 | GAZLI İÇECEK | 110 | DOM. SOSLU PATATES KIZARTMASI (1) | 87
+ |  | Z.YAĞLI KABAK KALYE (1) | 36 |  |  | VİŞNELİ YAPRAK SARMA (1,7,8,10,11,12,14) | 71 |  |  | PATATES SALATASI (1,12) | 75 |  |  | Z.YAĞLI ORBİT FASULYE (1,8) | 48 |  |  | ŞAKŞUKA | 76
+TOPLAM | 860 | TOPLAM | 213 | TOPLAM | 634 | TOPLAM | 195 | TOPLAM | 1009 | TOPLAM | 225 | TOPLAM | 771 | TOPLAM | 168 | TOPLAM | 900 | TOPLAM | 226
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Pazartesi, Eylül 21, 2026 |  |  |  | Salı, Eylül 22, 2026 |  |  |  | Çarşamba, Eylül 23, 2026 |  |  |  | Perşembe, Eylül 24, 2026 |  |  |  | Cuma, Eylül 25, 2026 |  |  | 
+MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL
+KROTONLU ÇORBA (1,3,4,8) | 143 | KÖZ SOGAN SALATASI | 21 | EZOGELİN ÇORBA (1,8) | 125 | FIRINLANMIŞ BABY PATATES  (1,3,4,12) | 29 | SEBZE ÇORBASI (1,3,4,8) | 114 | YOĞURT (4) | 39 | ŞEHRİYE ÇORBASI (1,3,4,8) | 181 | KÖZ SOGAN SALATASI | 21 | MERCİMEK ÇORBASI (1,8) | 137 | ÇOBAN SALATASI | 32
+PATATES PÜRESİ YATAĞINDA ET SOTE  | 298 | CACIK (4) | 42 |  IZGARA TAVUK GÖĞÜS / RENKLİ BİBERLİ MANTAR KAVURMA (1,2,3,4,7,11,13) | 252 | ÇERİ DOMATES-SALATALIK / KABAK ÇEKİRDEKLİ MISIRLI AKDENİZ YEŞİLLİĞİ / KUŞ ÜZÜMLÜ HAVUÇ SALATASI  (7,8,11,12) | 21 | ETLİ KURU FASULYE (1,8) | 233 | KARIŞIK TURŞU (12) | 12 | HAMBURGER / ÇITIR PATATES (1,3,4,8,12,14) | 358 | HAVUÇ TARATOR (3,4) | 75 | MEVSİM TÜRLÜ (8) | 143 | KARIŞIK SALATA(KIRMIZI LAHANA-HAVUÇ) (12) | 34
+BEZELYELİ PİRİNÇ PİLAVI (1,8) | 281 | MAYDANOZLU KÖZLENMİŞ PATLICAN SALATASI (12) | 7 | FESLEĞEN SOSLU SPAGETTİ (1,3,4) | 227 | PEMBE SULTAN (4,12) | 72 | TEL ŞEHRİYELİ PİRİNÇ PİLAVI (1) | 258 | GAVURDAĞI SALATASI (7,11) | 54 | SARI BURMA (1,3,4,7,8,11) | 346 | MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12) | 8 | MANTI (1,3,4) | 302 | KORNİŞON TURŞU (12) | 5
+FINDIKLI KEMALPAŞA TATLISI / KAYMAK (1,3,4,7,11,12,14) | 287 | BEYAZ LAHANA TURŞUSU (12) | 10 | SOĞUK ÇAY | 99 | SUSAMLI YEŞİL SOYA FASULYESİ / SADE BASMATİ (1,3,4,8,14) | 82 | MEYVE (KAVUN) | 83 | Z.YAĞLI KABAK KALYE (1) | 36 | GAZLI İÇECEK | 110 | DEREOTLU MISIRLI YEŞİL ZEYTİN SALATASI (8) | 29 | LİMONATA | 73 | PİYAZ (1,3,8,14) | 54
+ |  | PİYAZ (1,3,8,14) | 54 |  |  | FALAFEL / SOS (1,3,4,8,10,11,12,14) | 138 |  |  | DOM.SOSLU KARIŞIK KIZART. (BİBER-PATATES) (1) | 75 |  |  | HUMUS (1,8,14) | 68 |  |  | Z.YAĞLI YAPRAK SARMA (1,7,8,10,11,12,14) | 68
+TOPLAM | 1009 | TOPLAM | 134 | TOPLAM | 703 | TOPLAM | 342 | TOPLAM | 688 | TOPLAM | 216 | TOPLAM | 995 | TOPLAM | 201 | TOPLAM | 655 | TOPLAM | 193
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+Pazartesi, Eylül 28, 2026 |  |  |  | Salı, Eylül 29, 2026 |  |  |  | Çarşamba, Eylül 30, 2026 |  |  |  |  |  |  |  |  |  |  | 
+MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL | MENÜ | KAL | SALATBAR | KAL |  |  |  |  |  |  |  | 
+EZOGELİN ÇORBA (1,8) | 125 | YOĞURT (4) | 39 | DOMATES ÇORBASI (1,3,4,8) | 137 | DEREOTLU YOĞURT SALATASI (3,4) | 43 | MERCİMEK ÇORBASI (1,8) | 137 | ŞAKŞUKA | 76 |  |  |  |  |  |  |  | 
+MANTAR SOSLU BİFTEK / PATATES PÜRESİ (1,2,3,4,13) | 381 | GAVURDAĞI SALATASI (7,11) | 54 | FIRINDA GARNİTÜRLÜ TAVUK BAGET (1,4) | 316 | PANCAR TURŞUSU (12) | 39 | İSKENDER (1,3,4) | 372 | KARIŞIK SALATA (KIRMIZI LAHANA-MISIRLI YEŞİL ZEYTİN) (8,12) | 33 |  |  |  |  |  |  |  | 
+NOHUTLU PİRİNÇ PİLAVI (1,8) | 286 | KÖZ SOGAN SALATASI | 21 | ARPA ŞEHRİYELİ PİRİNÇ PİLAVI (1) | 257 | MAYDANOZLU KÖZLENMİŞ PATLICAN SALATASI (12) | 7 | HAVUÇ DİLİM BAKLAVA  (1,3,4,7,8,11) | 470 | HUMUS (1,8,14) | 68 |  |  |  |  |  |  |  | 
+SOĞUK ÇAY | 99 | MAYDANOZLU KÖZLENMİŞ KIRMIZI BİBER SALATASI (12) | 8 | MEYVE (ARMUT) | 98 |  BİBER KIZART. | 25 | GAZLI İÇECEK | 110 | SUMAKLI SOĞAN | 19 |  |  |  |  |  |  |  | 
+ |  | Z.YAĞLI KABAK KALYE (1) | 36 |  |  | Z.YAĞLI ORBİT FASULYE (1,8) | 48 |  |  | Z.YAĞLI YAPRAK SARMA (1,7,8,10,11,12,14) | 68 |  |  |  |  |  |  |  | 
+TOPLAM | 891 | TOPLAM | 158 | TOPLAM | 808 | TOPLAM | 162 | TOPLAM | 1089 | TOPLAM | 264 |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ALERJEN UYARILARI |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+1- GLUTEN İÇEREN TAHILLAR VE BUNLARIN ÜRÜNLERİ. |  |  |  |  |  |  |  |  |  | 6- HARDAL VE HARDAL ÜRÜNLERİ |  |  |  |  |  |  |  |  | 
+2- DENİZ VE TATLISU KABUKLULARI VE BUNLARIN ÜRÜNLERİ |  |  |  |  |  |  |  |  |  | 7 - YERFISTIĞI VE YERFISTIĞI ÜRÜNLERİ |  |  |  |  |  |  |  |  | 
+3- YUMURTA VE YUMURTA ÜRÜNLERİ |  |  |  |  |  |  |  |  |  | 8 - SOYA FASULYESİ VE SOYA FASULYESİ ÜRÜNLERİ |  |  |  |  |  |  |  |  | 
+4- SÜT VE SÜT ÜRÜNLERİ |  |  |  |  |  |  |  |  |  | 9- KEREVİZ VE KEREVİZ ÜRÜNLERİ |  |  |  |  |  |  |  |  | 
+5-BALIK VE BALIK ÜRÜNLERİ |  |  |  |  |  |  |  |  |  | 10- ACI BAKLA VE ACI BAKLA ÜRÜNLERİ |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+YEMEKHANEDE KULLANILAN MAYONEZ YUMURTA(3) İLE SÜT ÜRÜNLERİ(4), SİRKE KÜKÜRT DİOKSİT (12) İÇEREBİLİR. AYRICA TÜM HAZIR SOSLAR HARDAL İÇEREN HATLARLA AYNI YERDE ÜRETİLMEKTEDİR. ESER MİKTARDA HARDAL (6) BARINDIRABİLİR. |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+---END SHEET---
+SHEET:KAHVALTI
+ | İBB ÖĞRENCİ YURTLARI EYLÜL AYI KAHVALTI MENÜSÜ |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | Pazartesi, Eylül 14, 2026 | KAL | Salı, Eylül 15, 2026 | KAL | Çarşamba, Eylül 16, 2026 | KAL | Perşembe, Eylül 17, 2026 | KAL | Cuma, Eylül 18, 2026 | KAL | Cumartesi, Eylül 19, 2026 | KAL | Pazar, Eylül 20, 2026 | KAL
+ | BEYAZ PEYNİR(4) | 120 | BEYAZ   PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120 | BEYAZ   PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120 | BEYAZ   PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120
+ | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40
+ | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8
+ | KAŞAR PEYNİR (4) | 140 | ÖRGÜ PEYNİR (4) | 115 | ÇEÇİL PEYNİR (4) | 113 | JAMBON (1,3,4,6,8,9) | 112 | SİMİT (1,3,4,14) | 275 | LABNE PEYNİR (4) | 50 | KAŞAR PEYNİR (4) | 140
+ | KAKAOLU FINDIK EZMESİ (1,4,8,11) | 147 | VİŞNE REÇELİ (12) | 75 | TAHİN PEKMEZ (14) | 109 | GÜL REÇELİ (12) | 63 | BAL | 76 | HELVA(1,4,14) | 117 | KAKAOLU FINDIK EZMESİ (1,4,8,11) | 147
+ | PATATESLİ GÜL BÖREĞİ (1,3,4,14) | 328 | POĞAÇA(1,3,4,14) | 243 | SU BÖREĞİ(1,3,4) | 358 | PATATES HAŞLAMA (1,12) | 82 | TEREYAĞ(4) | 215 | AÇMA (1,3,4,14) | 381 | HAŞLANMIŞ YUMURTA (3) | 78
+ | HAŞLANMIŞ YUMURTA (3) | 78 | SUCUKLU YUMURTA (3) | 242 | SADE OMLET (3) | 183 | HAŞLANMIŞ YUMURTA (3) | 78 | MENEMEN (3) | 90 | PEYNİRLİ OMLET (3,4) | 205 | PATATES KIZARTMASI (1) | 312
+ | TOPLAM | 861 | TOPLAM | 843 | TOPLAM | 931 | TOPLAM | 503 | TOPLAM | 824 | TOPLAM | 921 | TOPLAM | 845
+ | Pazartesi, Eylül 21, 2026 | KAL | Salı, Eylül 22, 2026 | KAL | Çarşamba, Eylül 23, 2026 | KAL | Perşembe, Eylül 24, 2026 | KAL | Cuma, Eylül 25, 2026 | KAL | Cumartesi, Eylül 26, 2026 | KAL | Pazar, Eylül 27, 2026 | KAL
+ | BEYAZ PEYNİR(4) | 120 | BEYAZ   PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120 | BEYAZ   PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120 | BEYAZ   PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120
+ | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40
+ | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8
+ | POĞAÇA(1,3,4,14) | 243 | ÇEÇİL PEYNİR (4) | 113 | ÖRGÜ PEYNİR (4) | 115 | PEYNİRLİ GÜL BÖREĞİ (1,3,4,14) | 311 | SALAM (1,3,4,6,8,9) | 120 | KAŞAR PEYNİR (4) | 140 | ÇEÇİL PEYNİR (4) | 113
+ | BAL | 76 | TAHİN PEKMEZ (14) | 109 | KAYISI REÇELİ (12) | 58 | HELVA(1,4,14) | 117 | KAKAOLU FINDIK EZMESİ (1,4,8,11) | 147 | ÇİLEK REÇELİ (12) | 55 | HELVA(1,4,14) | 117
+ | TEREYAĞ(4) | 215 | HAŞLANMIŞ YUMURTA (3) | 78 | SUCUKLU YUMURTA (3) | 242 | KREM PEYNİR (4) | 65 | PATATES KIZARTMASI (1) | 312 | SİMİT (1,3,4,14) | 275 | HAŞLANMIŞ YUMURTA (3) | 78
+ | MENEMEN (3) | 90 | PATATES HAŞLAMA (1,12) | 82 | AÇMA (1,3,4,14) | 381 | KAŞARLI OMLET (3,4) | 238 | HAŞLANMIŞ YUMURTA (3) | 78 | SADE OMLET (3) | 183 | PEYNİRLİ KALEM BÖREK(1,3,4) | 311
+ | TOPLAM | 792 | TOPLAM | 550 | TOPLAM | 964 | TOPLAM | 899 | TOPLAM | 825 | TOPLAM | 821 | TOPLAM | 787
+ | Pazartesi, Eylül 28, 2026 | KAL | Salı, Eylül 29, 2026 | KAL | Çarşamba, Eylül 30, 2026 | KAL |  |  |  |  |  |  |  | 
+ | BEYAZ PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120 | BEYAZ PEYNİR(4) | 120 |  |  |  |  |  |  |  | 
+ | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 | SİYAH ZEYTİN/YEŞİL ZEYTİN | 40 |  |  |  |  |  |  |  | 
+ | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 | DOMATES/SALATALIK | 8 |  |  |  |  |  |  |  | 
+ | AÇMA (1,3,4,14) | 381 | ÖRGÜ PEYNİR (4) | 115 | JAMBON (1,3,4,6,8,9) | 112 |  |  |  |  |  |  |  | 
+ | BAL | 76 | KAKAOLU FINDIK EZMESİ (1,4,8,11) | 147 | GÜL REÇELİ (12) | 63 |  |  |  |  |  |  |  | 
+ | TEREYAĞ(4) | 215 | PATATESLİ GÜL BÖREĞİ (1,3,4,14) | 328 | SU BÖREĞİ(1,3,4) | 358 |  |  |  |  |  |  |  | 
+ | SUCUKLU YUMURTA (3) | 242 | PEYNİRLİ OMLET (3,4) | 205 | HAŞLANMIŞ YUMURTA (3) | 78 |  |  |  |  |  |  |  | 
+ | TOPLAM | 1082 | TOPLAM | 963 | TOPLAM | 779 |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | ALERJEN UYARILARI |  |  |  |  |  |  |  |  |  |  |  |  | 
+ | 1- GLUTEN İÇEREN TAHILLAR VE BUNLARIN ÜRÜNLERİ. |  |  |  |  |  | 6- HARDAL VE HARDAL ÜRÜNLERİ |  |  |  | 11- SERT KABUKLU KURU YEMİŞLER VE BUNLARIN ÜRÜNLERİ |  |  | 
+ | 2- DENİZ VE TATLISU KABUKLULARI VE BUNLARIN ÜRÜNLERİ |  |  |  |  |  | 7 - YERFISTIĞI VE YERFISTIĞI ÜRÜNLERİ |  |  |  | 12- KÜKÜRT DİOKSİT VE SÜLFİTLER |  |  | 
+ | 3- YUMURTA VE YUMURTA ÜRÜNLERİ |  |  |  |  |  | 8 - SOYA FASULYESİ VE SOYA FASULYESİ ÜRÜNLERİ |  |  |  | 13- YUMUŞAKÇALAR VE ÜRÜNLERİ |  |  | 
+ | 4- SÜT VE SÜT ÜRÜNLERİ |  |  |  |  |  | 9- KEREVİZ VE KEREVİZ ÜRÜNLERİ |  |  |  | 14- SUSAM TOHUMU VE SUSAM TOHUMU ÜRÜNLERİ |  |  | 
+ | 5-BALIK VE BALIK ÜRÜNLERİ |  |  |  |  |  | 10- ACI BAKLA VE ACI BAKLA ÜRÜNLERİ |  |  |  |  |  |  | 
+ | YEMEKHANEDE KULLANILAN MAYONEZ YUMURTA(3) İLE SÜT ÜRÜNLERİ(4), SİRKE KÜKÜRT DİOKSİT (12) İÇEREBİLİR. AYRICA TÜM HAZIR SOSLAR HARDAL İÇEREN HATLARLA AYNI YERDE ÜRETİLMEKTEDİR. ESER MİKTARDA HARDAL (6) BARINDIRABİLİR. |  |  |  |  |  |  |  |  |  |  |  |  | 
+---END SHEET---
